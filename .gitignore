@@ -1,0 +1,11 @@
+# Ignore files
+.DS_Store
+
+# Ignore folder
+_archiv/
+node_modules/
+slidedecks/*
+
+# Do not ignore
+!slidedecks/demo/
+!slidedecks/demo/*
