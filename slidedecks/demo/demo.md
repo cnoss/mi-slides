@@ -1,5 +1,5 @@
 ---
-title: Visual Thinking
+title: Demo für MI Slides
 separator: ___
 verticalSeparator: ---
 revealOptions:
@@ -10,8 +10,38 @@ types: welcome, assignment
 ---
 
 slide-is:welcome
-# Visual Thinking
-Workshop im Rahmen des Moduls "Einführung in die Medieninformatik"
+# MI Slides
+Kleine Beispielpräsentation für das Markdown Slidedeck Tool im Look der Medieninformatik
+
+---
+
+slide-is:longtext
+## Worum geht es hier?
+
+Präsentieren macht Spaß, Präsenationen bauen nicht. Mir zumindest nicht. Ich erwische mich ständig dabeim wie ich in Keynote anfange Pixel zu schubsen und aus dem Ich-mach-mal-eben-ein-paar-Slides-für-morgen wird eine abendfüllende Beschäftigung.
+
+Also großer Markdown Fan und mittelgroßer reveal.js Fan habe ich dann mal ein kleines Mashup gemacht, in dem folgende Frameworks, Snippets und Ideen verbaut sind:
+* [reveal-md](https://github.com/webpro/reveal-md): Markdown Variante von [reveal.js](https://revealjs.com/)
+* Semantische Templates (dazu später mehr)
+* [Font Awesome Icons](https://fontawesome.com/icons)
+* MI Stylesheet 2K-18
+
+---
+
+slide-is:longtext
+## Semantische Templates
+
+Um möglichst schnell zu einer lesbaren und ansehnlichen Präsentation zu kommen verwendet MI Slides Markdown. Die gesamte Präsentation liegt in einer einzigen Markdown Datei. 
+
+Damit man nicht in die Versuchung kommt Pixel zu schubsen, sind die Templates nicht formal, sondern eher semantische organisiert. Im Zentrum steht daher eher die Frage: **Was soll die Folie machen? Welche Funktion hat sie?** und weniger die Frage: **Wie soll die Folie aussehen?**
+
+---
+
+slide-is:longtext
+## Was kann das Tool gut? Was kann es nicht?
+
+
+Um möglichst schnell zu einer lesbaren und ansehnlichen Präsentation zu kommen verwendet MI Slides zum einen Markdown. 
 
 ---
 
