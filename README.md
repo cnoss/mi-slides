@@ -97,5 +97,23 @@ slide-is:simpel
 ## Und ich bin die kleine Schwester der Headline.
 
 ```
+#### slide-is:welcome
+Die Begrüßungsfolie enthält in der Regel nur eine Headline und einen kurzen Text.
 
-**slide-is:simple** Die einfachste Folie der Welt, sozusagen der VW Golf unter den Layouts: pragmatisch, einfach, gut.
+```
+slide-is:welcome
+# Ich bin eine Headline
+Und ich bin ein kurzer Untertitel
+```
+
+#### slide-is:outro
+Die Abschlussfolie enthält meist nur eine Headline zweiter Ordnung und ein paar weiterführende Informationen oder Kontaktdaten.
+
+```
+## Danke für's Mitmachen
+icon:twitter [twitter.com/cnoss](http://twitter.com/cnoss)  
+icon:facebook [www.facebook.com/cnoss](https://www.facebook.com/cnoss)
+```
+
+#### slide-is:simple
+Die einfachste Folie der Welt, sozusagen der VW Golf unter den Layouts: pragmatisch, einfach, gut.
