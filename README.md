@@ -24,9 +24,7 @@ MI-Slides braucht:
 
 ``` npm start ```
 
-**Demo Präsentation auswählen**
-
-**Fertig**
+**Demo Präsentation auswählen … Fertig**
 
 
 ## Nutzt welche Tools?
