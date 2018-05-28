@@ -27,7 +27,11 @@ MI-Slides braucht:
 **Demo Präsentation auswählen … Fertig**
 
 
-## Nutzt welche Tools?
+## Eigene Präsentation bauen
+
+Die Präsentationen liegen im Verzeichnis "slidedecks". Es empfiehlt sich für jede Präsentation ein eigenes Unterverzeichnis anzulegen. Dort muss eine Markdown Datei liegen und ggf. weitere Assets für die Präsentation, z.B. Bilder.
+
+
 
 ## Kann was?
 - Live Reload
