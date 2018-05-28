@@ -110,6 +110,7 @@ Und ich bin ein kurzer Untertitel
 Die Abschlussfolie enthält meist nur eine Headline zweiter Ordnung und ein paar weiterführende Informationen oder Kontaktdaten.
 
 ```
+slide-is:outro
 ## Danke für's Mitmachen
 icon:twitter [twitter.com/cnoss](http://twitter.com/cnoss)  
 icon:facebook [www.facebook.com/cnoss](https://www.facebook.com/cnoss)
@@ -117,3 +118,26 @@ icon:facebook [www.facebook.com/cnoss](https://www.facebook.com/cnoss)
 
 #### slide-is:simple
 Die einfachste Folie der Welt, sozusagen der VW Golf unter den Layouts: pragmatisch, einfach, gut.
+
+#### slide-is:explanation
+Manchmal hat man viel zu sagen. Mit dieser Auszeichnung geht das ganz gut.
+
+#### slide-is:assignment
+Für den Fall, dass man eine kleine Aufgabe herausgeben möchte.
+
+#### slide-is:interlude
+Folie mit zufällig generiertem, farbigen Hintergrund, ideal für einen Zwischenstopp, einen gedanklichen Ausflug oder ein neuen inhaltichen Block.
+
+#### slide-is:image-fullscreen 
+Ein Bild sagt mehr als 1000 Worte. Bilder können via absoluter URL eingebunden werden:
+
+```
+slide-is:image-fullscreen https://upload.wikimedia.org/wikipedia/commons/1/11/Honigberg-wald-1s.jpg
+```
+
+Oder relativ zum Verzeichnis der Präsentation:
+
+```
+slide-is:image-fullscreen img/IMG_6024.jpg
+```
+
