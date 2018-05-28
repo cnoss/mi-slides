@@ -98,5 +98,4 @@ slide-is:simpel
 
 ```
 
-#### slide-is:simple
-Die einfachste Folie der Welt, sozusagen der VW Golf unter den Layouts: pragmatisch, einfach, gut.
+**slide-is:simple** Die einfachste Folie der Welt, sozusagen der VW Golf unter den Layouts: pragmatisch, einfach, gut.
