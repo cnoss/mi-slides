@@ -1,5 +1,5 @@
 # MI-Slides
-Slidedecks in Markdown mit Reveal.js im MI Style
+Slidedecks in Markdown mit Reveal.js im MI Style. 
 
 ## Voraussetzungen
 MI-Slides braucht:
@@ -33,7 +33,7 @@ Die Präsentationen liegen im Verzeichnis "slidedecks". Es empfiehlt sich für j
 
 ### Metadaten
 
-Im Kopfbereich der Markdown Datei müssen ein paar Metadaten angegeben werden. Die meisten beziehen sich auf Einstellungen für Revea.js.
+Im Kopfbereich der Markdown Datei müssen ein paar Metadaten angegeben werden. Die meisten beziehen sich auf [Einstellungen für Reveal.js](https://github.com/webpro/reveal-md#yaml-front-matter).
 
 ```
 ---
@@ -45,6 +45,10 @@ revealOptions:
   center: false
 ---
 ```
+
+### Slides erstellen
+Alle Slides liegen in einer Markdown Datei. Bislang werden nur Slides in vertikaler Richtung unterstützt.
+
 
 ## Kann was?
 - Live Reload
