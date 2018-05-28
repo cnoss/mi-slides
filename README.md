@@ -1,7 +1,7 @@
 # MI-Slides
 Slidedecks in Markdown mit Reveal.js im MI Style. 
 
-## Kann das was?
+## Was kann der Skripthaufen?
 Präsentieren macht Spaß, Präsenationen bauen nicht. Mir zumindest nicht. Ich erwische mich ständig dabeim wie ich in Keynote anfange Pixel zu schubsen und aus dem Ich-mach-mal-eben-ein-paar-Slides-für-morgen wird eine abendfüllende Beschäftigung.
 
 Also großer Markdown Fan und mittelgroßer reveal.js Fan habe ich dann mal ein kleines Mashup gemacht, in dem folgende Frameworks, Snippets und Ideen verbaut sind:
@@ -83,6 +83,19 @@ Denkt dran:
 - früher war alles besser
 - jeden Tag eine gute Tat
 - mehr fällt mir gerade nicht ein
+
+```
+
+### Folien auszeichnen
+Nach dem Seperator kann der Folie die Funktion und damit das Layout mitgegeben werden. Das Schlüsselwort dafür ist slide-is.
+
+```
+
+---
+
+slide-is:simpel
+# Ich bin eine Headline
+## Und ich bin die kleine Schwester der Headline.
 
 ```
 
