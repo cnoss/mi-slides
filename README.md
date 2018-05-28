@@ -33,12 +33,11 @@ Die Präsentationen liegen im Verzeichnis "slidedecks". Es empfiehlt sich für j
 
 ### Metadaten
 
-Im Kopfbereich der Markdown Datei müssen ein paar Metadaten angegeben werden. Die meisten beziehen sich auf [Einstellungen für Reveal.js](https://github.com/webpro/reveal-md#yaml-front-matter).
+Im Kopfbereich der Markdown Datei müssen ein paar Metadaten angegeben werden. Außer dem Titel beziehen diese sich auf [Einstellungen für Reveal.js](https://github.com/webpro/reveal-md#yaml-front-matter).
 
 ```
 ---
 title: Demo für MI Slides
-verticalSeparator: ---
 revealOptions:
   transition: 'slide'
   backgroundTransition: 'zoom'
@@ -47,7 +46,13 @@ revealOptions:
 ```
 
 ### Slides erstellen
-Alle Slides liegen in einer Markdown Datei. Bislang werden nur Slides in vertikaler Richtung unterstützt.
+Alle Slides liegen in einer Markdown Datei. Bislang werden nur Slides in vertikaler Richtung unterstützt. Die einzelnen Folien werden durch einen Seperator voneinander getrennt.
+
+```
+Ich bin die erste Folie.
+---
+Und ich bin die zweite Folie.
+```
 
 
 ## Kann was?
