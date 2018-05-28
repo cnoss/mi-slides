@@ -35,6 +35,12 @@ Um möglichst schnell zu einer lesbaren und ansehnlichen Präsentation zu kommen
 
 Damit man nicht in die Versuchung kommt Pixel zu schubsen, sind die Templates nicht formal, sondern eher semantische organisiert. Im Zentrum steht daher eher die Frage: **Was soll die Folie machen? Welche Funktion hat sie?** und weniger die Frage: **Wie soll die Folie aussehen?**
 
+Dementsprechend gibt es Templates für verschiedene Funktionen:
+- welcome
+- assignment
+- interlude
+- explanation
+
 ---
 
 slide-is:longtext

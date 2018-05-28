@@ -6,7 +6,7 @@ var glob = require('glob-fs')({
 });
 var prompt = require('prompt');
 
-var basepath = path.resolve(__dirname);
+var basepath = path.resolve(__dirname) + "/..";
 var path_slidedecks = "slidedecks";
 var fullpath_slidedecks = basepath + "/" + path_slidedecks;
 

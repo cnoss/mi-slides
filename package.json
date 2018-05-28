@@ -1,21 +1,18 @@
 {
-    "name": "mi-markdown-slide-generator",
-    "version": "1.0.0",
-    "description": "Kleines Tool zum Erzeugen von Slidedecks aus einer Markdown Datei.",
-    "main": "gulpfile.js",
-    "dependencies": {
-        "glob-fs": "^0.1.7",
-        "gulp": "^4.0.0",
-        "gulp-sass": "^4.0.1",
-        "node-run-cmd": "^1.0.1",
-        "prompt": "^1.0.0",
-        "reveal-md": "^2.0.5"
-    },
-    "devDependencies": {},
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node core/mi-slides.js"
-    },
-    "author": "Christian Noss",
-    "license": "MIT"
+	"name": "mi-markdown-slide-generator",
+	"version": "1.0.0",
+	"description": "Kleines Tool zum Erzeugen von Slidedecks aus einer Markdown Datei.",
+	"dependencies": {
+		"glob-fs": "^0.1.7",
+		"node-run-cmd": "^1.0.1",
+		"prompt": "^1.0.0",
+		"reveal-md": "^2.0.5"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node core/mi-slides.js"
+	},
+	"author": "Christian Noss",
+	"license": "MIT"
 }
