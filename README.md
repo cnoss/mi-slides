@@ -1,5 +1,5 @@
 # MI-Slides
-Slidedecks in Markdown mit Reveal.js im MI Style. 
+Slidedecks in Markdown mit Reveal.js im MI Style. Hier mal eine [Demopräsentation](https://cnoss.github.io/mi-slides/).
 
 ## Was kann der Skripthaufen?
 Präsentieren macht Spaß, Präsenationen bauen nicht. Mir zumindest nicht. Ich erwische mich ständig dabeim wie ich in Keynote anfange Pixel zu schubsen und aus dem Ich-mach-mal-eben-ein-paar-Slides-für-morgen wird eine abendfüllende Beschäftigung.
