@@ -73,7 +73,6 @@ Und ich bin die zweite Folie.
 Innerhalb der Folien können alle Markdown Auszeichnungen, wie Headlines, Aufzählungen und ähnliches verwendet werden.
 
 ```
-
 # Ich bin eine Headline
 ## Und ich bin die kleine Schwester der Headline.
 
@@ -83,14 +82,12 @@ Denkt dran:
 - früher war alles besser
 - jeden Tag eine gute Tat
 - mehr fällt mir gerade nicht ein
-
 ```
 
 ### Folien auszeichnen
 Nach dem Seperator kann der Folie die Funktion und damit das Layout mitgegeben werden. Das Schlüsselwort dafür ist slide-is.
 
 ```
-
 ---
 
 slide-is:simpel
