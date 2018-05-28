@@ -141,3 +141,5 @@ Oder relativ zum Verzeichnis der Präsentation:
 slide-is:image-fullscreen img/IMG_6024.jpg
 ```
 
+## Ideen & Anregungen …
+… bitte in die [Issues](https://github.com/cnoss/mi-slides/issues). Bugs bitte selber behalten. Falls noch jemand dieses kleine Tool mit weiter entwickeln möchte: melden :)
