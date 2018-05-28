@@ -8,7 +8,7 @@ MI-Slides braucht:
 
 ## Getting Started
 
-** Repo lokal klonen **
+**Repo lokal klonen**
 
 ``` git clone git@github.com:cnoss/mi-slides.git ```
 
