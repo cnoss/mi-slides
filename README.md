@@ -46,12 +46,16 @@ revealOptions:
 ```
 
 ### Slides erstellen
-Alle Slides liegen in einer Markdown Datei. Bislang werden nur Slides in vertikaler Richtung unterstützt. Die einzelnen Folien werden durch einen Seperator voneinander getrennt.
+Alle Slides liegen in einer Markdown Datei. Bislang werden nur Slides in vertikaler Richtung unterstützt. Die einzelnen Folien werden durch einen Seperator (Leerzeile gefolgt von drei Minus-Zeichen und einer weiteren Leerzeile) voneinander getrennt.
 
 ```
+
 Ich bin die erste Folie.
+
 ---
+
 Und ich bin die zweite Folie.
+
 ```
 
 
