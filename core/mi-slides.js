@@ -82,7 +82,7 @@ prompt.get(['id'], function (err, result) {
         let c = create_command(slidedecks[result.id]);
 
         cmd.run(c).then(function (exitCodes) {
-            console.log("ok")
+            console.log("ok");
         }, function (err) {
             console.log('Command failed to run with error: ', err);
         });
