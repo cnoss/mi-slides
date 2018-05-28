@@ -8,15 +8,15 @@ MI-Slides braucht:
 
 ## Getting Started
 
-1. Repo lokal klonen
+### Repo lokal klonen
 
 ``` git clone git@github.com:cnoss/mi-slides.git ```
 
-2. ins Verzeichnis wechseln
+### ins Verzeichnis wechseln
 
 ``` cd mi-slides ```
 
-3. Module installieren
+### Module installieren
 
 ``` npm install ```
 
