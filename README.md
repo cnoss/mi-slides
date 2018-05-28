@@ -73,6 +73,8 @@ Und ich bin die zweite Folie.
 Innerhalb der Folien können alle Markdown Auszeichnungen, wie Headlines, Aufzählungen und ähnliches verwendet werden.
 
 ```
+---
+
 # Ich bin eine Headline
 ## Und ich bin die kleine Schwester der Headline.
 
@@ -96,3 +98,5 @@ slide-is:simpel
 
 ```
 
+#### slide-is:simple
+Die einfachste Folie der Welt, sozusagen der VW Golf unter den Layouts: pragmatisch, einfach, gut.
