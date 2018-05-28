@@ -1,6 +1,17 @@
 # MI-Slides
 Slidedecks in Markdown mit Reveal.js im MI Style. 
 
+## Kann das was?
+Präsentieren macht Spaß, Präsenationen bauen nicht. Mir zumindest nicht. Ich erwische mich ständig dabeim wie ich in Keynote anfange Pixel zu schubsen und aus dem Ich-mach-mal-eben-ein-paar-Slides-für-morgen wird eine abendfüllende Beschäftigung.
+
+Also großer Markdown Fan und mittelgroßer reveal.js Fan habe ich dann mal ein kleines Mashup gemacht, in dem folgende Frameworks, Snippets und Ideen verbaut sind:
+
+- reveal-md: Markdown Variante von reveal.js
+- Live-Reload
+- Semantische Templates (dazu später mehr)
+- Font Awesome Icons
+- MI Stylesheet 2K-18
+
 ## Voraussetzungen
 MI-Slides braucht:
 - NPM ab Version 6.0
@@ -75,6 +86,3 @@ Denkt dran:
 
 ```
 
-
-## Kann was?
-- Live Reload
