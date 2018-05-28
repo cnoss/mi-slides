@@ -1,34 +1,40 @@
-var cmd = require('node-run-cmd');
-var path = require("path");
-var fs = require('fs');
-var glob = require('glob-fs')({
-    gitignore: true
-});
-var prompt = require('prompt');
+const
+    cmd = require('node-run-cmd'),
+    path = require("path"),
+    fs = require('fs'),
+    glob = require('glob-fs')({
+        gitignore: true
+    }),
+    prompt = require('prompt');
 
-var basepath = path.resolve(__dirname) + "/..";
-var path_slidedecks = "slidedecks";
-var fullpath_slidedecks = basepath + "/" + path_slidedecks;
+const static = "--static docs";
 
-var theme = "custom-themes/medieninformatik-semantic.css";
-var preprocessor = "core/reveal-md-pre.js";
-var script = "core/reveal-md-add-icons.js";
+const basepath = path.resolve(__dirname) + "/..";
+const path_slidedecks = "slidedecks";
+const fullpath_slidedecks = basepath + "/" + path_slidedecks;
 
-var reveal_command = {};
+const theme = "custom-themes/medieninformatik-semantic.css";
+const preprocessor = "core/reveal-md-pre.js";
+const script = "core/reveal-md-add-icons.js";
+
+let params = process.argv[2];
+
+const reveal_command = {};
 reveal_command.tool = "node node_modules/reveal-md/bin/cli.js";
 reveal_command.options = "-w";
 reveal_command.scripts = "--scripts " + script;
 reveal_command.preprocessor = "--preprocessor " + preprocessor;
 reveal_command.theme = "--theme " + theme;
+reveal_command.static = (params === "static") ? " " + static + " " : "";
 reveal_command.slides = "";
 
 
-var walk = function (dir) {
-    var results = []
-    var list = fs.readdirSync(dir)
+let walk = function (dir) {
+    let results = []
+    let list = fs.readdirSync(dir)
     list.forEach(function (file) {
         file = dir + '/' + file
-        var stat = fs.statSync(file)
+        let stat = fs.statSync(file)
         if (stat && stat.isDirectory()) results = results.concat(walk(file))
         else if (file.match(/\.md$/)) {
             results.push(file)
@@ -37,11 +43,11 @@ var walk = function (dir) {
     return results
 }
 
-var slidedecks = {};
-var count = 0;
+let slidedecks = {};
+let count = 0;
 
 walk(fullpath_slidedecks).forEach(path => {
-    var slidedeck = {};
+    let slidedeck = {};
     count++;
 
     slidedeck.name = path.replace(fullpath_slidedecks + "/", "");
@@ -59,7 +65,7 @@ console.log("\na: abbrechen\n");
 -----------------------------------------------------------------------------*/
 function create_command(slidedeck) {
 
-    var c = [];
+    let c = [];
     Object.keys(reveal_command).forEach(function (element) {
         c.push(reveal_command[element]);
     });
@@ -73,15 +79,13 @@ prompt.start();
 prompt.get(['id'], function (err, result) {
 
     if (slidedecks[result.id]) {
-        var c = create_command(slidedecks[result.id]);
-        cmd.run(c);
-        /*const { spawn } = require('child_process');
-        const child = spawn(c, {
-            stdio: 'inherit',
-            shell: true
-        });*/
-        console.log(c);
+        let c = create_command(slidedecks[result.id]);
+
+        cmd.run(c).then(function (exitCodes) {
+            console.log("ok")
+        }, function (err) {
+            console.log('Command failed to run with error: ', err);
+        });
 
     }
-
 });

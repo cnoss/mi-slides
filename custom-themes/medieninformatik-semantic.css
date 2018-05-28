@@ -480,27 +480,31 @@ html {
   margin: auto;
 }
 
-.reveal .slides .image-fullscreen {
-  width: 960px;
-  height: 700px;
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
+.reveal .slides .image-fullscreen>* {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1em;
+  color: #fff;
+  display: inline-block;
 }
 
 .reveal .slides .assignment h1,
-.reveal .slides .assignment h2 {
+.reveal .slides .assignment h2,
+.reveal .slides .simple h1,
+.reveal .slides .simple h2 {
   padding-bottom: 0.5em;
   margin-bottom: 1em;
   margin-left: 0;
 }
 
 .reveal .slides .assignment h1,
-.reveal .slides .assignment h2 {
+.reveal .slides .assignment h2,
+.reveal .slides .simple h1,
+.reveal .slides .simple h2 {
   border-bottom: solid 1px rgba(0, 0, 0, 0.2);
 }
 
-.reveal .slides .assignment>* {
+.reveal .slides .assignment>*,
+.reveal .slides .simple>* {
   margin-left: 30%;
 }
 

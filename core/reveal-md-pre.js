@@ -71,8 +71,8 @@ module.exports = (markdown, options) => {
 				} else if (mode == "image-fullscreen") {
 
 					line = line.replace(/{{klassen}}/, "center");
-					line = line.replace(/{{style}}/, 'style="background-image: url(' + data + ')"');
-					line = '<!-- .slide: data-background="#000" data-background-transition="none" -->\n' + line;
+					//line = line.replace(/{{style}}/, 'style="background-image: url(' + data + ')"');
+					line = '<!-- .slide: data-background="' + data + '" -->\n' + line;
 
 				} else if (mode == "interlude") {
 
@@ -84,7 +84,12 @@ module.exports = (markdown, options) => {
 					line = line.replace(/{{klassen}}/, "center");
 
 
-				} else if (mode == "longtext") {
+				} else if (mode == "simple") {
+
+					line = line.replace(/{{klassen}}/, "center");
+
+
+				} else if (mode == "explanation") {
 
 					line = line.replace(/{{klassen}}/, "center");
 					line = '<!-- .slide: data-transition="convex" data-background-transition="scroll" data-background="' + rand_grey() + '" -->\n' + line;
