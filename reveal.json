@@ -74,6 +74,6 @@
         // the menu button.
         delayInit: false,
 
-        basePath: "asaass"
+        controls: true
     }
 }

@@ -11,7 +11,7 @@ slide-is:welcome
 # MI Slides
 Kleine Beispielpräsentation für das Markdown Slidedeck Tool im Look der Medieninformatik
 
----
+___
 
 slide-is:simple
 ## Worum geht es hier?
@@ -24,7 +24,7 @@ Also großer Markdown Fan und mittelgroßer reveal.js Fan habe ich dann mal ein 
 * [Font Awesome Icons](https://fontawesome.com/icons)
 * MI Stylesheet 2K-18
 
----
+___
 
 slide-is:simple
 ## Semantische Templates
@@ -34,7 +34,7 @@ Um möglichst schnell zu einer lesbaren und ansehnlichen Präsentation zu kommen
 Damit man nicht in die Versuchung kommt Pixel zu schubsen, sind die Templates nicht formal, sondern eher semantische organisiert. Im Zentrum steht daher eher die Frage: **Was soll die Folie machen? Welche Funktion hat sie?** und weniger die Frage: **Wie soll die Folie aussehen?**
 
 
----
+___
 
 slide-is:simple
 ## Templates und deren Funktion
@@ -47,7 +47,7 @@ slide-is:simple
 * image-fullscreen: ein großes Bild
 * tbc.
 
----
+___
 
 slide-is:simple
 ## Kann das was?
@@ -56,7 +56,7 @@ Bislang kann man mit dem Tool vor allem schnell mal ein paar einfache Textfolien
 
 Im Folgenden kommen ein noch paar Beispielfolien.
 
----
+___
 
 slide-is:assignment
 ## icon:pencil Fingerübung
@@ -109,7 +109,7 @@ Für die Aufgabe haben Sie ** 5 Minuten ** Zeit.
 
 
 
----
+___
 
 slide-is:outro
 ## Danke für's Mitmachen
