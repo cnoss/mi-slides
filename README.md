@@ -128,17 +128,23 @@ Für den Fall, dass man eine kleine Aufgabe herausgeben möchte.
 #### slide-is:interlude
 Folie mit zufällig generiertem, farbigen Hintergrund, ideal für einen Zwischenstopp, einen gedanklichen Ausflug oder ein neuen inhaltichen Block.
 
-#### slide-is:image-fullscreen 
+#### slide-is:image 
 Ein Bild sagt mehr als 1000 Worte. Bilder können via absoluter URL eingebunden werden:
 
 ```
-slide-is:image-fullscreen https://upload.wikimedia.org/wikipedia/commons/1/11/Honigberg-wald-1s.jpg
+slide-is:image https://upload.wikimedia.org/wikipedia/commons/1/11/Honigberg-wald-1s.jpg
 ```
 
 Oder relativ zum Verzeichnis der Präsentation:
 
 ```
-slide-is:image-fullscreen img/IMG_6024.jpg
+slide-is:image img/IMG_6024.jpg
+```
+#### slide-is:image-fullscreen 
+Mit dieser Anweisung wird das Bild nachher randbündig angezeigt.
+
+```
+slide-is:image-fullscreen https://upload.wikimedia.org/wikipedia/commons/1/11/Honigberg-wald-1s.jpg
 ```
 
 ## Ideen & Anregungen …
