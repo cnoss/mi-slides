@@ -128,6 +128,9 @@ Für den Fall, dass man eine kleine Aufgabe herausgeben möchte.
 #### slide-is:interlude
 Folie mit zufällig generiertem, farbigen Hintergrund, ideal für einen Zwischenstopp, einen gedanklichen Ausflug oder ein neuen inhaltichen Block.
 
+#### slide-is:conclusion
+Folie mit farbigem Hintergrund für die Zusammenfassung eines inhaltichen Blocks.
+
 #### slide-is:image 
 Ein Bild sagt mehr als 1000 Worte. Bilder können via absoluter URL eingebunden werden:
 
