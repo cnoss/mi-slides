@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>Demo für MI Slides</title>
+        <title>Developing a Community Website on JAMstack with GIT Managed Content and a Isomorphic Rendering Approach</title>
         <link rel="stylesheet" href="./css/reveal.css">
         <link rel="stylesheet" href="./custom-themes/medieninformatik-semantic.css" id="theme">
         <link rel="stylesheet" href="./css/highlight/zenburn.css">
@@ -21,132 +21,862 @@
         <div class="reveal">
             <div class="slides"><section ><section data-markdown><script type="text/template">
 
+<!-- .slide: data-background="images/header-illustration-bg.svg" -->
+<!-- .slide: class="image-fullscreen center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
 <!-- .slide: data-background="#9313CE" -->
 <!-- .slide: class="welcome center" -->
 
-# MI Slides
-Kleine Beispielpräsentation für das Markdown Slidedeck Tool im Look der Medieninformatik
+# Case Study: Developing a Community Website on JAMstack with GIT Managed Content and a Isomorphic Rendering Approach
+oder: eine kleine Reise in die Welt des Unwissens
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+<!-- .slide: data-background="#4952E1" -->
+<!-- .slide: class="interlude center" -->
+
+## Wie bin ich auf diesen Titel gekommen???
+lang, falsch, unverständlich und in der falschen Sprache :/
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#4952E1" -->
+<!-- .slide: class="interlude center" -->
+
+## Christian Noss
+Web-(designer|developer|enthusiast) seit … öhm
 
 </script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
 
 <!-- .slide: class="simple center" -->
 
-## Worum geht es hier?
+## Disclaimer
 
-Präsentieren macht Spaß, Präsenationen bauen nicht. Mir zumindest nicht. Ich erwische mich ständig dabeim wie ich in Keynote anfange Pixel zu schubsen und aus dem Ich-mach-mal-eben-ein-paar-Slides-für-morgen wird eine abendfüllende Beschäftigung.
+- Sichtweisen und Kontexte sind eher persönlich<!-- .element: class="fragment" -->
+- Sachverhalte sind oft verkürzt dargestellt<!-- .element: class="fragment" -->
+- Schlüsse sind zugunsten der Prägnanz oft plakativ<!-- .element: class="fragment" -->
 
-Also großer Markdown Fan und mittelgroßer reveal.js Fan habe ich dann mal ein kleines Mashup gemacht, in dem folgende Frameworks, Snippets und Ideen verbaut sind:
-* [reveal-md](https://github.com/webpro/reveal-md): Markdown Variante von [reveal.js](https://revealjs.com/)
-* Semantische Templates (dazu später mehr)
-* [Font Awesome Icons](https://fontawesome.com/icons)
-* MI Stylesheet 2K-18
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#444433" -->
+<!-- .slide: class="interlude center" -->
+
+## Wen könnte das Thema interessieren?
+
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+<!-- .slide: data-background="#9313CE" -->
+<!-- .slide: class="welcome center" -->
+
+# **Developing a** Community **Website** on JAMstack with GIT Managed Content and a Isomorphic Rendering Approach
+irgendwo zwischen **informationsgetriebener Website(z.B. Wikipedia)** und funktionsgetrieber Web-App (z.B. Gmail, Spotify)
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#4952E1" -->
+<!-- .slide: class="interlude center" -->
+
+## Dem Kunden/ User möglichst schnell und gut strukturiert die gesuchten Informationen ausliefern.
+Ziel
+
+</script></section><section data-markdown><script type="text/template"> <!-- .element: class="fragment" -->
+
+<!-- .slide: class="simple center" -->
+
+## 1993
+
+HTML & VIM, Webserver, Telnet, Mosaic > __Seite funktioniert: Waaaaahnsinn!!__
+
+> Kernfrage: läuft die Seite?
 
 </script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
 
 <!-- .slide: class="simple center" -->
 
-## Semantische Templates
+## 1998
 
-Um möglichst schnell zu einer lesbaren und ansehnlichen Präsentation zu kommen verwendet MI Slides Markdown. Die gesamte Präsentation liegt in einer einzigen Markdown Datei. 
+HTML, CSS, ~~VIM~~ BBedit, ~~Mosaic~~ Netscape Navigator, Webserver, FTP, Telnet, CGI/Perl > __Seite funktioniert und sieht irgendwie gut aus: yeeeeaaaah!!__
 
-Damit man nicht in die Versuchung kommt Pixel zu schubsen, sind die Templates nicht formal, sondern eher semantische organisiert. Im Zentrum steht daher eher die Frage: **Was soll die Folie machen? Welche Funktion hat sie?** und weniger die Frage: **Wie soll die Folie aussehen?**
+> Kernfragen: laufen die Skripte und sieht die Seite gut aus?
 
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+
+<!-- .slide: class="simple center" -->
+
+## 2003
+
+~~HTML~~ XHTML, CSS, Javascript, DHTML oder Flash, BBedit, ~~Netscape Navigator~~ Internet/Explorer/Safari/Firefox, Webserver(Produktiv), Webserver(Dev), SFTP, SSH, ~~CGI/Perl~~ PHP, CMS(Produktiv), CMS(Dev), (My)SQL-DB(Produktiv), (My)SQL-DB(Dev), SVN > __Seite funktioniert, sieht auf verschiedenen Browsern korrekt aus, hat coole grafische Effekte, Kunde versteht das CMS, PHP Skripte laufen, JS Skripte laufen auch im IE, Seite ist barrierefrei, Code ist valide und wohlgeformt, Sync vom Dev ins Live System funktioniert, WebMetrics laufen: yeah!__
+
+> Kernfrage: Findet der Google Bot die Seiten? 
 
 </script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
 
 <!-- .slide: class="simple center" -->
 
-## Templates und deren Funktion
+## 2008
 
+XHTML, CSS, Javascript, script.aculo.us, ~~Flash~~, ~~VIM BBedit~~ Sublime, AJAX, ~~Mosaic Netscape Navigator~~ Chrome/Internet Explorer/Safari/Firefox, iPhone, Webserver(Produktiv), Webserver(Staging), Webserver(Dev), SFTP, SSH, PHP, Code-Ignitor, CMS(Produktiv), CMS(Dev), (My)SQL-DB(Produktiv), (My)SQL-DB(Dev), SVN > __Seite funktioniert, sieht auf verschiedenen Browsern korrekt aus, hat coole grafische Effekte, Kunde versteht das CMS, PHP Skripte laufen, JS Skripte laufen auch im IE, Seite ist barrierefrei, Code ist valide und wohlgeformt, Sync vom Dev ins Live System funktioniert, Site wird von Google indiziert, WebMetrics laufen, Seite funktioniert irgendwie auch auf dem iPhone: yeah!__
 
-* welcome: die Startfolie
-* assignment: eine kleine Aufgabe
-* interlude: Zwischenstop oder Störer
-* explanation: längere textuelle Erläuterung
-* image-fullscreen: ein großes Bild
-* tbc.
+> Kernfragen: Läuft die Seite auf dem iPhone vom Chef halbwegs?
 
 </script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
 
 <!-- .slide: class="simple center" -->
 
-## Kann das was?
+## 2013
 
-Bislang kann man mit dem Tool vor allem schnell mal ein paar einfache Textfolien machen. Na gut, Bilder gehen natürlich auch. Was geht und Wie es geht, findet sich in der [Doku](https://github.com/cnoss/mi-slides).
+~~HTML XHTML~~ HTML5, ~~CSS~~ CSS3, Less/Sass, Javascript, ~~script.aculo.us~~ jQuery, Bootstrap/Foundation, AngularJS, AJAX, ~~VIM BBedit~~ Sublime, ~~Mosaic Netscape Navigator~~/Chrome/Internet Explorer/Safari/Firefox, iPhone/Android/iPad, Webserver(Produktiv), Webserver(Staging), Webserver(Dev), SFTP, SSH, PHP, ~~Code-Ignitor~~ Laravel, Flatfile-CMS(Produktiv), Flatfile-CMS(Dev), (My)SQL-DB(Produktiv), (My)SQL-DB(Dev), Git, Grunt > __Seite funktioniert, sieht auf verschiedenen Browsern korrekt aus, Kunde versteht das CMS, Skripte laufen, Seite ist ~~barrierefrei~~ performant, Code ist ~~valide~~ komprimiert ~~und wohlgeformt~~, Build Chain funktioniert, Deployment Pipeline funktioniert, Site wird von Google indiziert, WebMetrics laufen, Seite funktioniert gut auf allen Desktops, Smartphones und Tablets, wahrgenommene Performance ist gut: puh!__
 
-Im Folgenden kommen ein noch paar Beispielfolien.
+> Kernfragen: Funktionieren die Build Chain und Deployment Pipeline?
 
 </script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
 
-<!-- .slide: class="assignment center" -->
+<!-- .slide: class="simple center" -->
 
-## <i class="fa fa-pencil" aria-hidden="true"></i>Fingerübung
+## 2018
 
-Nehmen Sie ein DIN A4 Blatt und falten Sie es mittig über die lange Seite. Zeichnen Sie dann im oberen Teil ein einfaches, aber möglichst charakteristisches Portrait von sich selbst. Danach zeichnen Sie auf der Rückseite eines von Ihrem Nebenmann.
+~~HTML XHTML~~ HTML5, ~~CSS~~ CSS3, ~~Less~~ Sass, ~~Javascript~~ ECMAScript 2017, Babel, ~~script.aculo.us~~ ~~jQuery~~, Bootstrap/Foundation/SemnaticUI/Bulma/UIKit/, Angular/React/Vue, ~~AJAX~8, ~~VIM BBedit~~ Sublime, ~~Mosaic Netscape Navigator~~/Chrome/Internet Explorer/Safari/Firefox, iPhone/Android/iPad, Webserver(Produktiv), Webserver(Staging), Webserver(Dev), SFTP, SSH, PHP, ~~Code-Ignitor Laravel, Flatfile-CMS(Produktiv), Flatfile-CMS(Dev), (My)SQL-DB(Produktiv), (My)SQL-DB(Dev)~~, HeadlessCMS, JAMStack, Git, ~~Grunt~~ WebPack, NPM > __Seite funktioniert, sieht auf verschiedenen Browsern korrekt aus, Kunde versteht das CMS, Skripte laufen, Seite ist ~~barrierefrei~~ performant, Code ist ~~valide~~ komprimiert ~~und wohlgeformt~~, Build Chain funktioniert, Deployment Pipeline funktioniert, Site wird von Google indiziert, WebMetrics laufen, Seite funktioniert gut auf allen Desktops, Smartphones und Tablets, wahrgenommene Performance ist gut: puh!__
 
-Tauschen Sie sich aus, vergleichen Sie die Portraits, wählen Sie das, welches Sie am Besten wieder gibt und ergänzen Sie es um die folgenden Angaben:
-* Ihren Vornamen
-* zwei Ihrer guten Eigenschaften
-* zwei Ihrer schlechten Eigenschaften
-* ein kurzes Statement, warum Sie ein guter Medieninformatiker sind oder werden
+> Kernfrage: Ist mein Stack noch zeitgemäß?
 
-Für die Aufgabe haben Sie ** 10 Minuten ** Zeit.
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="conclusion center" -->
+
+## Die Ziele haben sich kaum verändert, der Weg zum Ziel enorm!
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+<!-- .slide: data-background="#9313CE" -->
+<!-- .slide: class="welcome center" -->
+
+# Developing a **Community** Website on JAMstack with GIT Managed Content and a Isomorphic Rendering Approach
 
 </script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
 
 <!-- .slide: data-background="#00AD2F" -->
 <!-- .slide: class="interlude center" -->
 
-## What's up?
-Dies ist ein Zwischenstopp
+## A feeling of fellowship with others, as a result of sharing common attitudes, interests and goals.
+Fabian Pfortmüller
 
 </script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
 
-<!-- .slide: data-background="https://upload.wikimedia.org/wikipedia/commons/1/11/Honigberg-wald-1s.jpg" -->
+<!-- .slide: data-background="images/community.svg" -->
+<!-- .slide: class="image-fullscreen center" -->
+
+
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+<!-- Content
+	-------------------------------------------------------------------------->
+<!-- .slide: data-background="#9313CE" -->
+<!-- .slide: class="welcome center" -->
+
+# Case Study: Developing a Community Website on JAMstack with GIT Managed **Content** and a Isomorphic Rendering Approach
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#4952E1" -->
+<!-- .slide: class="interlude center" -->
+
+# Content is king.
+Bill Gates
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/google-1999.png" -->
 <!-- .slide: class="image-fullscreen center" -->
 
 
 </script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
 
-<!-- .slide: data-background="img/IMG_6024.jpg" -->
+<!-- .slide: data-background="images/content-creation.png" -->
 <!-- .slide: class="image-fullscreen center" -->
 
-## Das geht auch mit Text und so.
+
 
 </script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
 
-<!-- .slide: class="longtext " -->
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="conclusion center" -->
 
-## Szenario: Beispieltext 
+## <i class="fa fa-book" aria-hidden="true"></i>Content Entwicklung ist jede Menge Arbeit.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum
+</script></section></section><section ><section data-markdown><script type="text/template">
+<!-- Content Management
+	-------------------------------------------------------------------------->
+<!-- .slide: data-background="#9313CE" -->
+<!-- .slide: class="welcome center" -->
+
+# Case Study: Developing a Community Website on JAMstack with GIT **Managed Content** and a Isomorphic Rendering Approach
+Oder passender: Content Management
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/content-structure.png" -->
+<!-- .slide: class="image center" -->
 
 
-> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#444433" -->
+<!-- .slide: class="interlude center" -->
+
+## Aufgaben eines Content Management Systems
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/CMS-Tasks.png" -->
+<!-- .slide: class="image center" -->
 
 
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#dd1166" -->
+<!-- .slide: class="interlude center" -->
+
+## Structured Content vs. „Layouted“ Content
+Mental Model of Content
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/content-structured.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/layout-simple.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#4952E1" -->
+<!-- .slide: class="interlude center" -->
+
+### „Layouted“ Content
+
+</script></section><section data-markdown><script type="text/template"> <!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/content-layouted-fvf.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+
+<!-- .slide: data-background="images/content-layouted.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#dd1166" -->
+<!-- .slide: class="interlude center" -->
+
+### Content Storage
+
+</script></section><section data-markdown><script type="text/template"> <!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/content-storage.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"> <!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/cms-nutzung.png" -->
+<!-- .slide: class="image center" data-background-transition="zoom"-->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+
+<!-- .slide: class="simple center" -->
+
+## Ergebnis
+
+- Content ist da und kann publiziert werden<!-- .element: class="fragment" -->
+- Content liegt in den Strukturen des CMS<!-- .element: class="fragment" -->
+- Content kann schlecht weiter verarbeitet werden<!-- .element: class="fragment" -->
+- Content ist segmentiert<!-- .element: class="fragment" -->
+- Semantik geht verloren<!-- .element: class="fragment" -->
+- Merging von Content bei vielen parallelen Pflegeprozessen ist schwer<!-- .element: class="fragment" -->
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/CMS-Tasks.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#dd1166" -->
+<!-- .slide: class="interlude center" -->
+
+# Organizing
+Wie wird strukturiert?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: class="simple center" -->
+
+## Wie wird strukturiert?
+- im CMS Backend<!-- .element: class="fragment" -->
+- mit Kategorien<!-- .element: class="fragment" -->
+- mit weiteren Taxonomien, z.B. Tags<!-- .element: class="fragment" -->
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#4952E1" -->
+<!-- .slide: class="interlude center" -->
+
+# Publishing
+Wie wird ausgeliefert?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/cms-components.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/cms-stack.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/trad-stack.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/trad-stack-2.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/trad-stack-3.png" -->
+<!-- .slide: class="image center" -->
+
+ 
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/trad-stack-4.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/trad-stack-5.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/trad-stack-simple.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/trad-stack-in-real.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/trad-stack-content.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/trad-stack-content-2.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="conclusion center" -->
+
+## <i class="fa fa-ban" aria-hidden="true"></i>Wenn wir den Zustand schlecht reden wollten:
+- Content Pflege ist mühsam<!-- .element: class="fragment" -->
+- Content zerfällt/ wird segmentiert<!-- .element: class="fragment" -->
+- Organisation ist umständlich<!-- .element: class="fragment" -->
+- Merge von Datenständen ist sau kompliziert<!-- .element: class="fragment" -->
+- Content lässt sich schlecht weiter verarbeiten<!-- .element: class="fragment" -->
+- Content ist in den Strukturen des Systems „gefangen“<!-- .element: class="fragment" -->
+- Content Migration in ein anderen System ist sehr komplex<!-- .element: class="fragment" -->
+- Publishing ist langsam<!-- .element: class="fragment" -->
+- Bedienung von verschiedenen Ausgabekanälen ist mühsam<!-- .element: class="fragment" -->
+- Publishing skaliert schlecht<!-- .element: class="fragment" -->
+- System bietet viele Angriffsvektoren<!-- .element: class="fragment" -->
+- monolithisches System<!-- .element: class="fragment" -->
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#4952E1" -->
+<!-- .slide: class="interlude center" -->
+
+## Static is the new dynamic!
+Why not?
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+<!-- JAM Stack
+	-------------------------------------------------------------------------->
+<!-- .slide: data-background="#9313CE" -->
+<!-- .slide: class="welcome center" -->
+
+# Case Study: Developing a Community Website on **JAMstack** with GIT Managed Content and a Isomorphic Rendering Approach
+Coined by Mathias Biilmann, Netlify 
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: class="simple center" -->
+
+## Stacks
+* **WISA stack:** Windows, IIS, SQL Server, ASP.NET 
+* **LAMP:** Linux, Apache, MySQL, Python || Perl || PHP
+* **MEAN:** MongoDB, express.js, angular.js, node.js 
+* **MERN:** MongoDB, Express.js, React.js, Node.js
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#dd1166" -->
+<!-- .slide: class="interlude center" -->
+
+# JAM
+
+Javascript, APIs and Markup
 
 </script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
 
 <!-- .slide: class="assignment center" -->
 
-## <i class="fa fa-fa-question-circle-o" aria-hidden="true"></i>**Aufgabe 1:** Szenario verstehen
+## Javascript
+Any dynamic programming during the request/response cycle is handled by JavaScript, running entirely on the client. This could be any frontend framework, library, or even vanilla JavaScript.
 
-Analysieren Sie Ihr Szenario und entwickeln Sie eine Herangehensweise an das Problem. Identifizieren Sie notwendiges Know-How und formulieren Sie Fragen für ein erstes Sondierungsgespräch.
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
 
-Für die Aufgabe haben Sie ** 5 Minuten ** Zeit. 
+<!-- .slide: class="assignment center" -->
 
+## APIs
+All server-side processes or database actions are abstracted into reusable APIs, accessed over HTTP with JavaScript. These can be custom-built or leverage third-party services.
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: class="assignment center" -->
+
+## Markup
+Templated markup should be prebuilt at deploy time, usually using a site generator for content sites, or a build tool for web apps.
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="interlude center" -->
+
+## Aufgaben werden entkoppelt
+\#microservices \#decoupling \#antimonolithic
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/CMS-Tasks.png" -->
+<!-- .slide: class="image center" -->
 
 
 </script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/CMS-Tasks-jamstack.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="interlude center" -->
+
+# Bausteine des Stacks
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/jamstack-blocks.png" -->
+<!-- .slide: class="image center" data-background-transition="slide"-->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#444433" -->
+<!-- .slide: class="interlude center" -->
+
+# \#1 Creating Content
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: class="simple center" -->
+
+## Content in Markdown
+- übersichtlich<!-- .element: class="fragment" -->
+- in sich geschlossen<!-- .element: class="fragment" -->
+- flat<!-- .element: class="fragment" -->
+- leicht zu editieren<!-- .element: class="fragment" -->
+- leicht weiter zu verarbeiten<!-- .element: class="fragment" -->
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/markdown.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#4952E1" -->
+<!-- .slide: class="interlude center" -->
+
+# \#2 Organizing Content
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: class="simple center" -->
+
+## Organisation im Filesystem … 
+- bekanntes mentales Modell<!-- .element: class="fragment" -->
+- übersichtlich<!-- .element: class="fragment" -->
+- leicht und schnell zu editieren<!-- .element: class="fragment" -->
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: class="simple center" -->
+
+## … und via GIT/GITHUB
+- Versionierung<!-- .element: class="fragment" -->
+- Merging<!-- .element: class="fragment" -->
+- Branching<!-- .element: class="fragment" -->
+- zusätzliche Tools, z.B. Issues<!-- .element: class="fragment" -->
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/filesystem.png" -->
+<!-- .slide: class="image center" data-background-transition="slide"-->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/git.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/git-2.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#dd1166" -->
+<!-- .slide: class="interlude center" -->
+
+# \#3 Publishing Content
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: class="simple center" -->
+
+## Prerendered, static Data
+- rendered at buildtime via static site generator<!-- .element: class="fragment" -->
+- deployed to simple webserver or cdn<!-- .element: class="fragment" -->
+- additional data via javascript and APIs<!-- .element: class="fragment" -->
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: class="simple center" -->
+
+## Vorteile
+- superschnell und skalierbar<!-- .element: class="fragment" -->
+- sehr sicher<!-- .element: class="fragment" -->
+- minimale Anforderungen an den Server<!-- .element: class="fragment" -->
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/jamstack-example.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: class="simple center" -->
+
+## Realworld Examples
+* [Smashing Magazine](https://www.smashingmagazine.com/)
+* Reakkreditierung der Medieninformatik [Repo](https://github.com/th-koeln/mi-2017) // [Web](https://th-koeln.github.io/mi-2017/) // [PDF](http://www.medieninformatik.th-koeln.de/download/modulbeschreibungen-bachelor-bpo4.pdf)
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="conclusion center" -->
+
+## <i class="fa fa-gratipay" aria-hidden="true"></i>Wenn wir den JAMstack schönreden wollten:
+- Pflege der Inhalte ist leicht <!-- .element: class="fragment" -->
+- Inhalte bleiben in sich geschlossen<!-- .element: class="fragment" -->
+- Inhalte sind portierbar<!-- .element: class="fragment" -->
+- Inhalte können versioniert werden<!-- .element: class="fragment" -->
+- verschiedene Stände können gemerged werden<!-- .element: class="fragment" -->
+- verschiedene Kanäle können recht gut bedient werden<!-- .element: class="fragment" -->
+- Trennung von Content und Layout ist gut möglich<!-- .element: class="fragment" -->
+- Organisation von Inhalten ist sehr einfach<!-- .element: class="fragment" -->
+- Publishing ist schnell<!-- .element: class="fragment" -->
+- Publishing ist sicher<!-- .element: class="fragment" -->
+- Publishing skaliert gut<!-- .element: class="fragment" -->
+- Best-of-Breed Ansatz mit lose gekoppelten Systemen<!-- .element: class="fragment" -->
+- unterstützt paralleles Entwickeln von Code und Content<!-- .element: class="fragment" -->
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+<!-- Case Study
+	-------------------------------------------------------------------------->
+<!-- .slide: data-background="#9313CE" -->
+<!-- .slide: class="welcome center" -->
+
+# **Case Study**: Developing a Community Website on JAMstack with GIT Managed Content and a Isomorphic Rendering Approach
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/community.svg" -->
+<!-- .slide: class="image-fullscreen center" data-background-transition="slide"-->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: class="simple center" -->
+
+## MI Website
+
+Die Medieninformatik Website ist der Schweizer Taschenmesser für die Kommunikation nach außen und innen. Sie richtet sich an alle Zielgruppen und stellt Informationen und Einblicke in das Forschungs- und Lehrgebiet Medieninformatik für die verschiedenen Zielgruppen bereit. Hier landet im Grunde alles, was in den anderen Kanälen nicht passt, oder was für längere Zeit vorgehalten werden soll. Schwerpunkt des Inhalts sind Artefakte, die im Rahmen von Projekten oder Abschlussarbeiten entstanden sind. Inhalte werden folgenden Hauptrubriken zugeordnet:
+
+* **mission:** alles rund im die Mission des Fachgebiets
+* **people:** alles rund im die Leute in der MI
+* **projects:** Berichte und Ergebnisse aus Projekten
+* **pulse:** alles, was gerade so passiert
+* **research:** Berichte und Ergebnisse aus Forschungsvorhaben und Kooperationen
+* **study:** alles rund ums Studium
+* **toolbox:** Helferlein für den Alltag von Medieninformatikern  
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: class="simple center" -->
+
+## Was soll die Seite können?
+Thanks to [Phil Hawksworth](https://www.hawksworx.com/)
+
+- meaningful URL for every Page (or Piece) of Content<!-- .element: class="fragment" -->
+- alle URLs sind Crawable, Curlaable und indizierbar<!-- .element: class="fragment" -->
+- jede URL liefert wirklichen Content<!-- .element: class="fragment" -->
+- URLs sind möglichst stabil<!-- .element: class="fragment" -->
+- schnelles Rendering und gute, wahrgenommene Performance<!-- .element: class="fragment" -->
+- hohe Ausfallsicherheit<!-- .element: class="fragment" -->
+- geringen Payload<!-- .element: class="fragment" -->
+- Möglichkeit für Übergänge and visuelle Effekte<!-- .element: class="fragment" -->
+- minimale Hosting Komplexität<!-- .element: class="fragment" -->
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: class="simple center" -->
+
+## Warum JAMstack?
+
+- Fokus auf Content/ Dokumente<!-- .element: class="fragment" -->
+- Offenheit des Systems<!-- .element: class="fragment" -->
+- in sich geschlossene Dokumente<!-- .element: class="fragment" -->
+- Zweitverwertung von Dokumenten ist leicht möglich<!-- .element: class="fragment" -->
+- unterschiedliche Autoren<!-- .element: class="fragment" -->
+- einfache Struktur<!-- .element: class="fragment" -->
+- Layout und Content entkoppelt<!-- .element: class="fragment" -->
+- …<!-- .element: class="fragment" -->
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="interlude center" -->
+
+# Building Blocks
+Markdown, GitHub, Hugo, Travis.CI, Github.io
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="interlude center" -->
+
+# Hugo
+
+Ein sehr flexiber und schneller Static Site Generator.
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#dd1166" -->
+<!-- .slide: class="interlude center" -->
+
+## Seiten & Listen
+Hugos inhaltliches Basiskonzept
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/hugo-list-example.png" -->
+<!-- .slide: class="image-fullscreen center" data-background-transition="slide"-->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/hugo-list-example-2.png" -->
+<!-- .slide: class="image-fullscreen center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/hugo-list-example-3.png" -->
+<!-- .slide: class="image-fullscreen center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#dd1166" -->
+<!-- .slide: class="interlude center" -->
+
+## mal kurz rein gucken?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="conclusion center" -->
+
+## <i class="fa fa-heartbeat" aria-hidden="true"></i>Derzeitige Beurteilung
+- Markdown ist wirklich hübsch<!-- .element: class="fragment" -->
+- Entwurf eines Systems um den Content herum ist interessant aber gar nicht so leicht<!-- .element: class="fragment" -->
+- konsequente Trennung von Content und Layout ist gar nicht so leicht<!-- .element: class="fragment" -->
+- Hugo's Lookup Order ist recht komplex<!-- .element: class="fragment" -->
+- Hugo's Lists & Pages Konzept ist cool, aber herausforderend<!-- .element: class="fragment" -->
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#dd1166" -->
+<!-- .slide: class="interlude center" -->
+
+## Hugo: multiple Repräsentationen des Contents
+HTML, AMP, JSON, XML
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+<!-- Isomorphic Rendering
+	-------------------------------------------------------------------------->
+<!-- .slide: data-background="#9313CE" -->
+<!-- .slide: class="welcome center" -->
+
+# Case Study: Developing a Community Website on JAMstack with GIT Managed Content and a **Isomorphic Rendering** Approach
+Javascript Page Rendering 
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/isomorphic.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="images/isomorphi-2.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"> <!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="conclusion center" -->
+
+## <i class="fa fa-tachometer" aria-hidden="true"></i>Speed up your page!
+* Bessere wahrgenommene Performance
+* Visuelle Effekte
+* Suchfunktionen
+* maschinenlesbare Inhalte
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+<!-- .slide: data-background="#4952E1" -->
+<!-- .slide: class="interlude center" -->
+
+## Was kann JAMstack für uns tun?
+
+</script></section><section data-markdown><script type="text/template"> <!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="conclusion center" -->
+
+## Geht es um Content?
+
+</script></section><section data-markdown><script type="text/template"> <!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="conclusion center" -->
+
+## Gibt es viele Autoren?
+
+</script></section><section data-markdown><script type="text/template"> <!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="conclusion center" -->
+
+## Soll Code und Content schnell parallel entwickelt werden?
+
+</script></section><section data-markdown><script type="text/template"> <!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="conclusion center" -->
+
+## Sind die Inhalte überwiegend statisch?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="conclusion center" -->
+
+## Hat das Team Dev-Skills und Spaß an einfachen als auch flexiblen Lösungen? 
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="#444433" -->
+<!-- .slide: class="interlude center" -->
+
+# JAMstack first?
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+
+<!-- .slide: data-background="#444433" -->
+<!-- .slide: class="interlude center" -->
+
+## auch interessant
+\#Netlify \#Flatfile CMS \#Headless CMS 
+
+</script></section><section  data-markdown><script type="text/template">
 
 <!-- .slide: data-background="#9313CE" -->
 <!-- .slide: class="outro center" -->
 
 ## Danke für's Mitmachen
+Slides unter **http://christian-noss.de/latest**
 
 <i class="fa fa-twitter" aria-hidden="true"></i>[twitter.com/cnoss](http://twitter.com/cnoss)  
-<i class="fa fa-facebook" aria-hidden="true"></i>[www.facebook.com/cnoss](https://www.facebook.com/cnoss)</script></section></section></div>
+<i class="fa fa-facebook" aria-hidden="true"></i>[www.facebook.com/cnoss](https://www.facebook.com/cnoss)</script></section></div>
         </div>
 
         <script src="./lib/js/head.min.js"></script>
@@ -190,7 +920,7 @@ Für die Aufgabe haben Sie ** 5 Minuten ** Zeit.
             // options from URL query string
             var queryOptions = Reveal.getQueryHash() || {};
 
-            var options = {"transition":"slide","backgroundTransition":"zoom","center":false};
+            var options = {"transition":"slide","backgroundTransition":"fade","center":false};
             options = extend(defaultOptions, options, queryOptions);
         </script>
 

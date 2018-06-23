@@ -17,7 +17,7 @@ const theme = "custom-themes/medieninformatik-semantic.css";
 const preprocessor = "core/reveal-md-pre.js";
 const script = "core/reveal-md-add-icons.js";
 
-let params = process.argv[2];
+let params = process.argv[3];
 
 const reveal_command = {};
 reveal_command.tool = "node node_modules/reveal-md/bin/cli.js";
@@ -80,6 +80,8 @@ prompt.get(['id'], function (err, result) {
 
     if (slidedecks[result.id]) {
         let c = create_command(slidedecks[result.id]);
+
+        console.log(c);
 
         cmd.run(c).then(function (exitCodes) {
             console.log("ok");

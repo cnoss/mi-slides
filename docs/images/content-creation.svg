@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3149px" height="2065px" viewBox="0 0 3149 2065" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>content-creation</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="content-creation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-opacity="0.316151495" fill="#C7C7C7" x="0" y="0" width="3149" height="2065"></rect>
+        <g id="Oval" transform="translate(391.000000, 895.000000)">
+            <circle stroke="#9313C3" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" cx="250" cy="94" r="50"></circle>
+            <text id="Plan" font-family="MyriadPro-Regular, Myriad Pro" font-size="72" font-weight="normal" fill="#000000">
+                <tspan x="185.2" y="298">Plan</tspan>
+            </text>
+        </g>
+        <g id="Oval" transform="translate(691.000000, 895.000000)">
+            <circle stroke="#9313C3" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" cx="250" cy="94" r="50"></circle>
+            <text id="Plan" font-family="MyriadPro-Regular, Myriad Pro" font-size="72" font-weight="normal" fill="#000000">
+                <tspan x="115.288" y="298">Research</tspan>
+            </text>
+        </g>
+        <g id="Oval" transform="translate(991.000000, 895.000000)">
+            <circle stroke="#9313C3" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" cx="250" cy="94" r="50"></circle>
+            <text id="Plan" font-family="MyriadPro-Regular, Myriad Pro" font-size="72" font-weight="normal" fill="#000000">
+                <tspan x="138.4" y="298">Outline</tspan>
+            </text>
+        </g>
+        <g id="Oval" transform="translate(1291.000000, 895.000000)">
+            <circle stroke="#9313C3" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" cx="250" cy="94" r="50"></circle>
+            <text id="Plan" font-family="MyriadPro-Regular, Myriad Pro" font-size="72" font-weight="normal" fill="#000000">
+                <tspan x="152.836" y="298">Create</tspan>
+            </text>
+        </g>
+        <g id="Oval" transform="translate(1591.000000, 895.000000)">
+            <circle stroke="#9313C3" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" cx="250" cy="94" r="50"></circle>
+            <text id="Plan" font-family="MyriadPro-Regular, Myriad Pro" font-size="72" font-weight="normal" fill="#000000">
+                <tspan x="155.608" y="298">Refine</tspan>
+            </text>
+        </g>
+        <g id="Oval" transform="translate(1891.000000, 895.000000)">
+            <circle stroke="#9313C3" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" cx="250" cy="94" r="50"></circle>
+            <text id="Plan" font-family="MyriadPro-Regular, Myriad Pro" font-size="72" font-weight="normal" fill="#000000">
+                <tspan x="214" y="298">…</tspan>
+            </text>
+        </g>
+        <path d="M645,938 C843.666667,803.333333 943,801.333333 943,932" id="Path-2" stroke="#9313C3" stroke-width="7" stroke-dasharray="3"></path>
+        <path id="Path-2-decoration-1" d="M943,932 L946,921.2 L940,921.2 L943,932 Z" stroke="#9313C3" stroke-width="7" stroke-dasharray="3"></path>
+        <path d="M943,937.522613 C1141.66667,802.855946 1241,800.855946 1241,931.522613" id="Path-2-Copy" stroke="#9313C3" stroke-width="7" stroke-dasharray="3"></path>
+        <path id="Path-2-Copy-decoration-1" d="M1241,931.522613 L1244,920.722613 L1238,920.722613 L1241,931.522613 Z" stroke="#9313C3" stroke-width="7" stroke-dasharray="3"></path>
+        <path d="M1243,937.522613 C1441.66667,802.855946 1541,800.855946 1541,931.522613" id="Path-2-Copy-2" stroke="#9313C3" stroke-width="7" stroke-dasharray="3"></path>
+        <path id="Path-2-Copy-2-decoration-1" d="M1541,931.522613 L1544,920.722613 L1538,920.722613 L1541,931.522613 Z" stroke="#9313C3" stroke-width="7" stroke-dasharray="3"></path>
+        <path d="M1543,937.522613 C1741.66667,802.855946 1841,800.855946 1841,931.522613" id="Path-2-Copy-3" stroke="#9313C3" stroke-width="7" stroke-dasharray="3"></path>
+        <path id="Path-2-Copy-3-decoration-1" d="M1841,931.522613 L1844,920.722613 L1838,920.722613 L1841,931.522613 Z" stroke="#9313C3" stroke-width="7" stroke-dasharray="3"></path>
+        <path d="M1843,937.522613 C2041.66667,802.855946 2141,800.855946 2141,931.522613" id="Path-2-Copy-4" stroke="#9313C3" stroke-width="7" stroke-dasharray="3"></path>
+        <path id="Path-2-Copy-4-decoration-1" d="M2141,931.522613 L2144,920.722613 L2138,920.722613 L2141,931.522613 Z" stroke="#9313C3" stroke-width="7" stroke-dasharray="3"></path>
+        <path d="M1553,1137.52261 C1751.66667,1002.85595 1851,1000.85595 1851,1131.52261" id="Path-2-Copy-5" stroke="#9313C3" stroke-width="7" stroke-dasharray="3" transform="translate(1702.000000, 1086.261307) scale(-1, -1) translate(-1702.000000, -1086.261307) "></path>
+        <path id="Path-2-Copy-5-decoration-1" d="M1851,1131.52261 L1854,1120.72261 L1848,1120.72261 L1851,1131.52261 Z" stroke="#9313C3" stroke-width="7" stroke-dasharray="3"></path>
+        <path d="M949,1137.52261 C1550.33333,1002.85595 1851,1000.85595 1851,1131.52261" id="Path-2-Copy-6" stroke="#9313C3" stroke-width="7" opacity="0.5" stroke-dasharray="3" transform="translate(1400.000000, 1086.261307) scale(-1, -1) translate(-1400.000000, -1086.261307) "></path>
+        <path id="Path-2-Copy-6-decoration-1" d="M1851,1131.52261 L1854,1120.72261 L1848,1120.72261 L1851,1131.52261 Z" stroke="#9313C3" stroke-width="7" opacity="0.5" stroke-dasharray="3"></path>
+    </g>
+</svg>

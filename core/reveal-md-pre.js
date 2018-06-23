@@ -8,6 +8,7 @@ module.exports = (markdown, options) => {
 			.map((line, index) => {
 				let mode = false;
 				let data = false;
+				let backgroundTransition = false;
 
 				// Farben
 				let lila = "#9313CE";
@@ -40,7 +41,7 @@ module.exports = (markdown, options) => {
 				// Aussage zerlegen
 				if (what) {
 					what = what.replace(/^ /, "");
-					[mode, data] = what.split(/ /);
+					[mode, data, backgroundTransition] = what.split(/ /);
 					mode = mode.replace(/ /, "");
 				}
 
@@ -71,13 +72,22 @@ module.exports = (markdown, options) => {
 				} else if (mode == "image-fullscreen") {
 
 					line = line.replace(/{{klassen}}/, "center");
-					//line = line.replace(/{{style}}/, 'style="background-image: url(' + data + ')"');
+					line = '<!-- .slide: data-background="' + data + '" -->\n' + line;
+
+				}else if (mode == "image") {
+
+					line = line.replace(/{{klassen}}/, "center");
 					line = '<!-- .slide: data-background="' + data + '" -->\n' + line;
 
 				} else if (mode == "interlude") {
 
 					line = line.replace(/{{klassen}}/, "center");
 					line = '<!-- .slide: data-background="' + rand_color() + '" -->\n' + line;
+
+				}else if (mode == "conclusion") {
+
+					line = line.replace(/{{klassen}}/, "center");
+					line = '<!-- .slide: data-background="' + green + '" -->\n' + line;
 
 				} else if (mode == "assignment") {
 
@@ -94,6 +104,11 @@ module.exports = (markdown, options) => {
 					line = line.replace(/{{klassen}}/, "center");
 					line = '<!-- .slide: data-transition="convex" data-background-transition="scroll" data-background="' + rand_grey() + '" -->\n' + line;
 
+				}
+
+				if(backgroundTransition){
+					line = line.replace(/{{style}}/, "data-background-transition=\"" + backgroundTransition + "\"");
+					
 				}
 
 				line = line.replace(/{{style}}/, "");
