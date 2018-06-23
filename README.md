@@ -1,5 +1,5 @@
 # MI-Slides
-Slidedecks in Markdown mit Reveal.js im MI Style. 
+Slidedecks in Markdown mit Reveal.js im MI Style. Hier mal eine [Demopräsentation](https://cnoss.github.io/mi-slides/).
 
 ## Was kann der Skripthaufen?
 Präsentieren macht Spaß, Präsenationen bauen nicht. Mir zumindest nicht. Ich erwische mich ständig dabeim wie ich in Keynote anfange Pixel zu schubsen und aus dem Ich-mach-mal-eben-ein-paar-Slides-für-morgen wird eine abendfüllende Beschäftigung.
@@ -128,17 +128,26 @@ Für den Fall, dass man eine kleine Aufgabe herausgeben möchte.
 #### slide-is:interlude
 Folie mit zufällig generiertem, farbigen Hintergrund, ideal für einen Zwischenstopp, einen gedanklichen Ausflug oder ein neuen inhaltichen Block.
 
-#### slide-is:image-fullscreen 
+#### slide-is:conclusion
+Folie mit farbigem Hintergrund für die Zusammenfassung eines inhaltichen Blocks.
+
+#### slide-is:image 
 Ein Bild sagt mehr als 1000 Worte. Bilder können via absoluter URL eingebunden werden:
 
 ```
-slide-is:image-fullscreen https://upload.wikimedia.org/wikipedia/commons/1/11/Honigberg-wald-1s.jpg
+slide-is:image https://upload.wikimedia.org/wikipedia/commons/1/11/Honigberg-wald-1s.jpg
 ```
 
 Oder relativ zum Verzeichnis der Präsentation:
 
 ```
-slide-is:image-fullscreen img/IMG_6024.jpg
+slide-is:image img/IMG_6024.jpg
+```
+#### slide-is:image-fullscreen 
+Mit dieser Anweisung wird das Bild nachher randbündig angezeigt.
+
+```
+slide-is:image-fullscreen https://upload.wikimedia.org/wikipedia/commons/1/11/Honigberg-wald-1s.jpg
 ```
 
 ## Ideen & Anregungen …
