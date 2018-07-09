@@ -9,7 +9,9 @@
     "reveal-md": "^2.0.5"
   },
   "devDependencies": {
-    "font-awesome": "^4.7.0"
+    "copy-dir": "^0.3.0",
+    "font-awesome": "^4.7.0",
+    "fs-extra": "^6.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

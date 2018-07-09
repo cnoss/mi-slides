@@ -5,7 +5,10 @@
 _archiv/
 node_modules/
 slidedecks/*
+static/*
 
 # Do not ignore
 !slidedecks/demo/
 !slidedecks/demo/*
+!static/demo/
+!static/demo/*

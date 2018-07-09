@@ -1,17 +1,19 @@
 const
     cmd = require('node-run-cmd'),
     path = require("path"),
-    fs = require('fs'),
     glob = require('glob-fs')({
         gitignore: true
     }),
-    prompt = require('prompt');
-
-const static = "--static docs";
+    prompt = require('prompt'),
+    fs = require('fs-extra')
 
 const basepath = path.resolve(__dirname) + "/..";
 const path_slidedecks = "slidedecks";
 const fullpath_slidedecks = basepath + "/" + path_slidedecks;
+const static = "--static";
+const staticDefaultOutput = "static";
+const staticDirs = "custom-themes";
+const staticAdditionalContent = ["examples", "images", "assignments", "links", "assas"];
 
 const theme = "custom-themes/medieninformatik-semantic.css";
 const preprocessor = "core/reveal-md-pre.js";
@@ -20,12 +22,12 @@ const script = "core/reveal-md-add-icons.js";
 let params = process.argv[3];
 
 const reveal_command = {};
-reveal_command.tool = "node node_modules/reveal-md/bin/cli.js";
+reveal_command.tool = "node node_modules/reveal-md/bin/cli.js --highlight-theme Vs";
 reveal_command.options = "-w";
 reveal_command.scripts = "--scripts " + script;
 reveal_command.preprocessor = "--preprocessor " + preprocessor;
 reveal_command.theme = "--theme " + theme;
-reveal_command.static = (params === "static") ? " " + static + " " : "";
+reveal_command.static = (params === "static") ? " " + "--static-dirs=" + staticDirs + " " + static + " " + staticDefaultOutput : "";
 reveal_command.slides = "";
 
 
@@ -64,14 +66,38 @@ console.log("\na: abbrechen\n");
 /* Create Reveal Command 
 -----------------------------------------------------------------------------*/
 function create_command(slidedeck) {
+    
+    if(reveal_command["static"]){
+        reveal_command["static"] += slidedeck.relpath
+    }
 
     let c = [];
     Object.keys(reveal_command).forEach(function (element) {
+
         c.push(reveal_command[element]);
     });
 
     return c.join(" ") + path_slidedecks + "/" + slidedeck.name;
 }
+
+
+/* Copy Additional Content to static Folder
+-----------------------------------------------------------------------------*/
+function copyAdditionalContent(slidedeck) {
+
+    let params = {};
+    const path = slidedeck.fullpath.substring(0, slidedeck.fullpath.lastIndexOf("/"));
+
+    staticAdditionalContent.forEach(function (folder) {
+        folder = escape(folder);
+        params.src =  path + "/" + folder;
+        params.target =  staticDefaultOutput + slidedeck.relpath + folder;
+        if(fs.existsSync(params.src)){ fs.copySync(params.src, params.target); }
+        
+    });
+}
+
+
 
 /* Start the prompt 
 -----------------------------------------------------------------------------*/
@@ -80,11 +106,14 @@ prompt.get(['id'], function (err, result) {
 
     if (slidedecks[result.id]) {
         let c = create_command(slidedecks[result.id]);
-
         console.log(c);
 
         cmd.run(c).then(function (exitCodes) {
             console.log("ok");
+            if(c.match(/static/)){
+                copyAdditionalContent(slidedecks[result.id]);    
+            }
+            
         }, function (err) {
             console.log('Command failed to run with error: ', err);
         });
