@@ -38,8 +38,8 @@ function loadScript(url, callback){
     document.getElementsByTagName("head")[0].appendChild(script);
 }
 
-
-loadScript("https://use.fontawesome.com/2dc7123acd.js", function(){
+// vor 10.2018 https://use.fontawesome.com/2dc7123acd.js
+loadScript("https://use.fontawesome.com/releases/v5.3.1/js/all.js", function(){
     //initialization code
 });
 

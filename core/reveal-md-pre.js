@@ -16,6 +16,7 @@ module.exports = (markdown, options) => {
 				let green = "#00AD2F";
 				let magenta = "#dd1166";
 				let gray = "#444433";
+				let black = "#000000";
 
 				// Graugenerator
 				let shades = ["d", "e", "f"];
@@ -74,7 +75,7 @@ module.exports = (markdown, options) => {
 					line = line.replace(/{{klassen}}/, "center");
 					line = '<!-- .slide: data-background="' + data + '" -->\n' + line;
 
-				}else if (mode == "image") {
+				}else if (mode == "image" || mode == "image-text") {
 
 					line = line.replace(/{{klassen}}/, "center");
 					line = '<!-- .slide: data-background="' + data + '" -->\n' + line;
@@ -83,6 +84,11 @@ module.exports = (markdown, options) => {
 
 					line = line.replace(/{{klassen}}/, "center");
 					line = '<!-- .slide: data-background="' + rand_color() + '" -->\n' + line;
+
+				}else if (mode == "video") {
+
+					line = line.replace(/{{klassen}}/, "center");
+					line = '<!-- .slide: data-background="'+black+'" -->\n' + line;
 
 				}else if (mode == "conclusion") {
 

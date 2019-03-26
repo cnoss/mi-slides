@@ -37,8 +37,9 @@ let walk = function (dir) {
     list.forEach(function (file) {
         file = dir + '/' + file
         let stat = fs.statSync(file)
+
         if (stat && stat.isDirectory()) results = results.concat(walk(file))
-        else if (file.match(/\.md$/)) {
+        else if (!file.match(/\/assets\//) && file.match(/\.md$/)) {
             results.push(file)
         }
     })
