@@ -37,6 +37,11 @@ MI-Slides starten:
 
 Demo Präsentation auswählen … Fertig
 
+Präsentation als statisches HTML speichern:
+
+```npm start static ```
+
+Präsentation wird dann in ein Unterverzeichnis in den static Folder gespielt.
 
 ## Eigene Präsentation bauen
 
