@@ -17,8 +17,7 @@
 
 body
 {
-    background-color: #fbfbfb;
-    background-color: #fbfbfb;
+    background-color: #fff;
     background-image: url('../../images/vieldrin-black.png');
     background-repeat: no-repeat;
     background-position: 20px 95%;
@@ -657,7 +656,7 @@ html
     display: inline-block;
     padding: 1em;
     color: #fff;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(147, 19, 195, .8);
 }
 
 .reveal .slides .video > iframe
@@ -679,6 +678,8 @@ html
 .reveal .slide-background.image-text
 {
     background-size: contain;
+    border: inset 50px transparent;
+    border-bottom: inset 70px transparent;
 }
 
 .reveal .slides .assignment h1,
