@@ -9,7 +9,7 @@ Also großer Markdown Fan und mittelgroßer reveal.js Fan habe ich dann mal ein 
 - reveal-md: Markdown Variante von reveal.js
 - Live-Reload
 - Semantische Templates (dazu später mehr)
-- Font Awesome Icons
+- Material Icons
 - MI Stylesheet 2K-18
 
 ## Voraussetzungen
