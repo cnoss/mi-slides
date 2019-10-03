@@ -1,9 +1,10 @@
 const
     cmd = require('node-run-cmd'),
     path = require("path"),
-    glob = require('glob-fs')({
+    /*glob = require('glob-fs')({
         gitignore: true
-    }),
+    }),*/
+    glob = require("glob"),
     prompt = require('prompt'),
     fs = require('fs-extra')
 
@@ -22,7 +23,7 @@ const script = "core/reveal-md-add-icons.js";
 let params = process.argv[3];
 
 const reveal_command = {};
-reveal_command.tool = "node node_modules/reveal-md/bin/cli.js --highlight-theme Vs";
+reveal_command.tool = "node node_modules/reveal-md/bin/reveal-md.js --highlight-theme Vs";
 reveal_command.options = "-w";
 reveal_command.scripts = "--scripts " + script;
 reveal_command.preprocessor = "--preprocessor " + preprocessor;

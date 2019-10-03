@@ -675,7 +675,9 @@ html
 }
 
 .reveal .slide-background.image,
-.reveal .slide-background.image-text
+.reveal .slide-background.image > div,
+.reveal .slide-background.image-text,
+.reveal .slide-background.image > div
 {
     background-size: contain;
     border: inset 50px transparent;
