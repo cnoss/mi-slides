@@ -151,6 +151,15 @@ Oder relativ zum Verzeichnis der Präsentation:
 ```
 slide-is:image img/IMG_6024.jpg
 ```
+
+#### slide-is:video
+Zum Einbinden von Videos. Videounterschriften sind möglich, dazu einfach Textlein schreiben wie gewohnt.
+
+```
+slide-is:video https://www.youtube.com/embed/sX7_0zs2qXQ
+Super Videounterschrift
+```
+
 #### slide-is:image-fullscreen 
 Mit dieser Anweisung wird das Bild nachher randbündig angezeigt.
 
