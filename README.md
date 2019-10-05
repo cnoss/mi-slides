@@ -127,6 +127,9 @@ Die einfachste Folie der Welt, sozusagen der VW Golf unter den Layouts: pragmati
 #### slide-is:explanation
 Manchmal hat man viel zu sagen. Mit dieser Auszeichnung geht das ganz gut.
 
+#### slide-is:statement
+Für eine wichtige Aussage oder Erklärung. Der Text ist hier eher groß und die Headline ziemlich klein.
+
 #### slide-is:assignment
 Für den Fall, dass man eine kleine Aufgabe herausgeben möchte.
 
