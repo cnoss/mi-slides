@@ -9,7 +9,7 @@ Also großer Markdown Fan und mittelgroßer reveal.js Fan habe ich dann mal ein 
 - reveal-md: Markdown Variante von reveal.js
 - Live-Reload
 - Semantische Templates (dazu später mehr)
-- Font Awesome Icons
+- Material Icons
 - MI Stylesheet 2K-18
 
 ## Voraussetzungen
@@ -127,6 +127,9 @@ Die einfachste Folie der Welt, sozusagen der VW Golf unter den Layouts: pragmati
 #### slide-is:explanation
 Manchmal hat man viel zu sagen. Mit dieser Auszeichnung geht das ganz gut.
 
+#### slide-is:statement
+Für eine wichtige Aussage oder Erklärung. Der Text ist hier eher groß und die Headline ziemlich klein.
+
 #### slide-is:assignment
 Für den Fall, dass man eine kleine Aufgabe herausgeben möchte.
 
@@ -148,6 +151,15 @@ Oder relativ zum Verzeichnis der Präsentation:
 ```
 slide-is:image img/IMG_6024.jpg
 ```
+
+#### slide-is:video
+Zum Einbinden von Videos. Videounterschriften sind möglich, dazu einfach Textlein schreiben wie gewohnt.
+
+```
+slide-is:video https://www.youtube.com/embed/sX7_0zs2qXQ
+Super Videounterschrift
+```
+
 #### slide-is:image-fullscreen 
 Mit dieser Anweisung wird das Bild nachher randbündig angezeigt.
 
