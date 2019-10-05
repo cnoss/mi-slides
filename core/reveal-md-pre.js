@@ -51,7 +51,7 @@ module.exports = (markdown, options) => {
 
 				// ggf. Icon einbauen
 				if (line.match(/icon:(.*?)/)) {
-					line = line.replace(/icon:(.*?)[ |$]/, "<i class=\"fa fa-$1\" aria-hidden=\"true\"></i>");
+					line = line.replace(/icon:(.*?)([ |$|\]])/, "<i class='fa fa-$1' aria-hidden='true'></i>$2");
 				}
 
 				// ggf. Fragment einbauen
@@ -78,7 +78,12 @@ module.exports = (markdown, options) => {
 				}else if (mode == "image" || mode == "image-text") {
 
 					line = line.replace(/{{klassen}}/, "center");
-					line = '<!-- .slide: data-background="' + data + '" -->\n' + line;
+          line = '<!-- .slide: data-background-color="#000000" data-background-image="'+data+'" -->\n' + line;
+
+				}else if (mode == "video") {
+
+					line = line.replace(/{{klassen}}/, "center");
+          line = '<!-- .slide: data-background-color="#000000" -->\n<iframe data-src="'+data+ '"></iframe>' + line;
 
 				} else if (mode == "interlude") {
 
@@ -104,6 +109,10 @@ module.exports = (markdown, options) => {
 
 					line = line.replace(/{{klassen}}/, "center");
 
+
+        } else if (mode == "statement") {
+
+					line = line.replace(/{{klassen}}/, "center");
 
 				} else if (mode == "explanation") {
 

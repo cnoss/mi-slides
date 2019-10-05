@@ -536,7 +536,7 @@ html
 {
     display: inline-block;
     width: 1em;
-    padding-right: .5em;
+    padding-right: 2px;
     color: #000;
 }
 
@@ -650,8 +650,7 @@ html
 
 
 .reveal .slides .image-fullscreen > *,
-.reveal .slides .image > *,
-.reveal .slides .video > iframe
+.reveal .slides .image > *
 {
     display: inline-block;
     padding: 1em;
@@ -665,19 +664,42 @@ html
     height: 50vH;
     padding: 0;
     margin-top: 1em !important;
+    border: none;
+}
+
+.reveal .slides .ima-ge-text{
+  top: 0 !important;
+  background-color: rgba(250,250,250,0.9);
+  padding: 1em;
+  border: solid 1px rgba(0,0,0,0.5);
 }
 
 .reveal .slides .image-text{
-    top: 0 !important;
-    background-color: rgba(250,250,250,0.9);
-    padding: 1em;
-    border: solid 1px rgba(0,0,0,0.5);
+  top: auto !important;
+  bottom: 0 !important;
+  background-color: rgba(0,0,0,1);
+  padding: 0.2em;
+}
+
+.reveal .slides .image-text h1,
+.reveal .slides .image-text h2,
+.reveal .slides .image-text h3{
+  font-size: 1em;
+  margin-bottom: 0.2em;
+}
+
+.reveal .slides .image-text p,
+.reveal .slides .image-text ul,
+.reveal .slides .image-text blockquote{
+  font-size: 1em;
+  margin: 0;
+  margin-bottom: 0.2em;
 }
 
 .reveal .slide-background.image,
 .reveal .slide-background.image > div,
 .reveal .slide-background.image-text,
-.reveal .slide-background.image > div
+.reveal .slide-background.image-text > div
 {
     background-size: contain;
     border: inset 50px transparent;
@@ -687,7 +709,9 @@ html
 .reveal .slides .assignment h1,
 .reveal .slides .assignment h2,
 .reveal .slides .simple h1,
-.reveal .slides .simple h2
+.reveal .slides .simple h2,
+.reveal .slides .statement h1,
+.reveal .slides .statement h2
 {
     margin-bottom: 1em;
     margin-left: 0;
@@ -697,7 +721,9 @@ html
 .reveal .slides .assignment h1,
 .reveal .slides .assignment h2,
 .reveal .slides .simple h1,
-.reveal .slides .simple h2
+.reveal .slides .simple h2,
+.reveal .slides .statement h1,
+.reveal .slides .statement h2
 {
     border-bottom: solid 1px rgba(0, 0, 0, .8);
 }
@@ -707,6 +733,8 @@ html
     margin-left: 30%;
 }
 
+/* explanation
+############################################################################ */
 .reveal .slides .explanation h1,
 .reveal .slides .explanation h2
 {
@@ -731,31 +759,25 @@ html
 .reveal .slides .explanation li
 {
     display: block;
-
     margin-bottom: .3em;
 }
 
 .reveal .slides .explanation li:before
 {
     display: inline-block;
-
     width: 1.2em;
     margin-left: 0;
-
     content: '-';
-
     color: #000;
 }
 
 .reveal .slides .explanation blockquote
 {
     font-weight: 100;
-
     width: auto;
     margin-top: 2em;
     padding: 0;
     padding-top: 2em;
-
     color: #000;
     border: none;
     border-top: solid 1px #d16;
@@ -768,7 +790,6 @@ html
 .reveal .slides .explanation blockquote:before
 {
     content: none;
-
     border: none;
 }
 
@@ -777,14 +798,76 @@ html
     display: inline;
 }
 
+
+/* statement
+############################################################################ */
+.reveal .slides .statement h1,
+.reveal .slides .statement h2
+{
+    margin-bottom: 1em;
+    margin-left: 0;
+    padding-bottom: .5em;
+    font-size: 1em;
+}
+
+.reveal .slides .statement p,
+.reveal .slides .statement td,
+.reveal .slides .statement th,
+.reveal .slides .statement li
+{
+    font-size: 1.5em;
+}
+
+.reveal .slides .statement li
+{
+    display: block;
+    margin-bottom: .3em;
+}
+
+.reveal .slides .statement li:before
+{
+    display: inline-block;
+    width: 1.2em;
+    margin-left: 0;
+    content: '-';
+    color: #000;
+}
+
+.reveal .slides .statement blockquote
+{
+    font-weight: 100;
+    width: auto;
+    margin-top: 2em;
+    padding: 0;
+    padding-top: 2em;
+    color: #000;
+    border: none;
+    border-top: solid 1px #d16;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.reveal .slides .statement blockquote:after,
+.reveal .slides .statement blockquote:before
+{
+    content: none;
+    border: none;
+}
+
+.reveal .slides .statement blockquote p
+{
+    display: inline;
+}
+
+
+/* Controls
+############################################################################ */
+
 .reveal .controls button
 {
-
-
     position: absolute;
-
     height: 20px;
-
     opacity: 1;
     border: 0;
 }

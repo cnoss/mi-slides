@@ -59,5 +59,13 @@ Reveal.addEventListener( 'ready', function( event ) {
 	right.innerHTML = '<i class="fa fa-chevron-right" aria-hidden="true"></i>';
 	
 
-} );
+});
 
+// Add Favicon
+let faviconURL = "https://www.medieninformatik.th-koeln.de/favicons/favicon.ico";
+let head = document.querySelector("head");
+let link = document.createElement("link");
+link.setAttribute("rel", "shortcut icon");
+link.setAttribute("type", "image/x-icon");
+link.setAttribute("href", faviconURL);
+head.appendChild(link);

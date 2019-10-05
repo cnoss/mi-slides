@@ -1,10 +1,7 @@
 const
     cmd = require('node-run-cmd'),
     path = require("path"),
-    /*glob = require('glob-fs')({
-        gitignore: true
-    }),*/
-    glob = require("glob"),
+    //glob = require("glob"),
     prompt = require('prompt'),
     fs = require('fs-extra')
 
