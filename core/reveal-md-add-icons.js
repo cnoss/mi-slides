@@ -39,7 +39,9 @@ function loadScript(url, callback){
 }
 
 // vor 10.2018 https://use.fontawesome.com/2dc7123acd.js
-loadScript("https://use.fontawesome.com/releases/v5.3.1/js/all.js", function(){
+// vor 04.2020 https://use.fontawesome.com/releases/v5.3.1/js/all.js
+// <script src="https://kit.fontawesome.com/3a0bf9dade.js" crossorigin="anonymous"></script>
+loadScript("https://kit.fontawesome.com/3a0bf9dade.js", function(){
     //initialization code
 });
 

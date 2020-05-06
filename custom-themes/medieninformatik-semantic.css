@@ -260,7 +260,10 @@ body
 
 .reveal code
 {
-    font-family: monospace;
+  font-family: 'Roboto Mono', monospace;
+  background-color: rgba(0,0,0,0.1);
+  padding: .1em .4em;
+  font-size: 0.8em;
 }
 
 .reveal pre code

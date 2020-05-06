@@ -11,7 +11,7 @@ const fullpath_slidedecks = basepath + "/" + path_slidedecks;
 const static = "--static";
 const staticDefaultOutput = "static";
 const staticDirs = "custom-themes";
-const staticAdditionalContent = ["examples", "images", "assignments", "links", "assas"];
+const staticAdditionalContent = ["examples", "images", "assignments", "links", "img"];
 
 const theme = "custom-themes/medieninformatik-semantic.css";
 const preprocessor = "core/reveal-md-pre.js";
@@ -25,7 +25,8 @@ reveal_command.options = "-w";
 reveal_command.scripts = "--scripts " + script;
 reveal_command.preprocessor = "--preprocessor " + preprocessor;
 reveal_command.theme = "--theme " + theme;
-reveal_command.static = (params === "static") ? " " + "--static-dirs=" + staticDirs + " " + static + " " + staticDefaultOutput : "";
+//reveal_command.static = (params === "static") ? " " + "--static-dirs=" + staticDirs + " " + static + " " + staticDefaultOutput : "";
+reveal_command.static = (params === "static") ? " " + static + " " + staticDefaultOutput : "";
 reveal_command.slides = "";
 
 
@@ -67,12 +68,12 @@ console.log("\na: abbrechen\n");
 function create_command(slidedeck) {
     
     if(reveal_command["static"]){
-        reveal_command["static"] += slidedeck.relpath
+      reveal_command["static"] += slidedeck.relpath
+      reveal_command["options"] = "";
     }
 
     let c = [];
     Object.keys(reveal_command).forEach(function (element) {
-
         c.push(reveal_command[element]);
     });
 
@@ -90,7 +91,8 @@ function copyAdditionalContent(slidedeck) {
     staticAdditionalContent.forEach(function (folder) {
         folder = escape(folder);
         params.src =  path + "/" + folder;
-        params.target =  staticDefaultOutput + slidedeck.relpath + folder;
+      params.target = staticDefaultOutput + slidedeck.relpath + folder;
+      console.log(params.src +"->"+params.target)
         if(fs.existsSync(params.src)){ fs.copySync(params.src, params.target); }
         
     });
@@ -109,7 +111,8 @@ prompt.get(['id'], function (err, result) {
 
         cmd.run(c).then(function (exitCodes) {
             console.log("ok");
-            if(c.match(/static/)){
+          if (c.match(/static/)) {
+            console.log("Create Static Version … ");
                 copyAdditionalContent(slidedecks[result.id]);    
             }
             
