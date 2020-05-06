@@ -5,15 +5,16 @@ const
     prompt = require('prompt'),
     fs = require('fs-extra')
 
-const basepath = path.resolve(__dirname) + "/..";
+const basepath = path.resolve(__dirname);
 const path_slidedecks = "slidedecks";
-const fullpath_slidedecks = basepath + "/" + path_slidedecks;
+const fullpath_slidedecks = basepath + "/../" + path_slidedecks;
 const static = "--static";
 const staticDefaultOutput = "static";
-const staticDirs = "custom-themes";
-const staticAdditionalContent = ["examples", "images", "assignments", "links", "img"];
+const staticAdditionalContent = ["examples", "images", "assignments", "links", "img", "custom-themes"];
+const staticAssetFolder = "_assets";
 
-const theme = "custom-themes/medieninformatik-semantic.css";
+const theme_folder = "custom-themes";
+const theme = theme_folder + "/medieninformatik-semantic.css";
 const preprocessor = "core/reveal-md-pre.js";
 const script = "core/reveal-md-add-icons.js";
 
@@ -89,13 +90,16 @@ function copyAdditionalContent(slidedeck) {
     const path = slidedeck.fullpath.substring(0, slidedeck.fullpath.lastIndexOf("/"));
 
     staticAdditionalContent.forEach(function (folder) {
-        folder = escape(folder);
-        params.src =  path + "/" + folder;
+      folder = escape(folder);
+      params.src =  path + "/" + folder;
       params.target = staticDefaultOutput + slidedeck.relpath + folder;
-      console.log(params.src +"->"+params.target)
-        if(fs.existsSync(params.src)){ fs.copySync(params.src, params.target); }
-        
+      console.log(params.src + "->" + params.target);
+      
+      if(fs.existsSync(params.src)){ fs.copySync(params.src, params.target); }
     });
+  fs.copySync(basepath + "/../" + theme_folder + "/",
+    staticDefaultOutput + "/" + slidedeck.relpath + "/" + staticAssetFolder + "/" + theme_folder + "");
+    
 }
 
 
