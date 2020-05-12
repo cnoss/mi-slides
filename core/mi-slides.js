@@ -1,7 +1,6 @@
 const
     cmd = require('node-run-cmd'),
     path = require("path"),
-    //glob = require("glob"),
     prompt = require('prompt'),
     fs = require('fs-extra')
 
@@ -18,7 +17,7 @@ const theme = theme_folder + "/medieninformatik-semantic.css";
 const preprocessor = "core/reveal-md-pre.js";
 const script = "core/reveal-md-add-icons.js";
 
-let params = process.argv[3];
+let params = process.argv[2];
 
 const reveal_command = {};
 reveal_command.tool = "node node_modules/reveal-md/bin/reveal-md.js --highlight-theme Vs";
@@ -26,7 +25,7 @@ reveal_command.options = "-w";
 reveal_command.scripts = "--scripts " + script;
 reveal_command.preprocessor = "--preprocessor " + preprocessor;
 reveal_command.theme = "--theme " + theme;
-//reveal_command.static = (params === "static") ? " " + "--static-dirs=" + staticDirs + " " + static + " " + staticDefaultOutput : "";
+// reveal_command.static = (params === "static") ? " " + "--static-dirs=" + staticDirs + " " + static + " " + staticDefaultOutput : "";
 reveal_command.static = (params === "static") ? " " + static + " " + staticDefaultOutput : "";
 reveal_command.slides = "";
 
@@ -108,10 +107,8 @@ function copyAdditionalContent(slidedeck) {
 -----------------------------------------------------------------------------*/
 prompt.start();
 prompt.get(['id'], function (err, result) {
-
     if (slidedecks[result.id]) {
         let c = create_command(slidedecks[result.id]);
-        console.log(c);
 
         cmd.run(c).then(function (exitCodes) {
             console.log("ok");
