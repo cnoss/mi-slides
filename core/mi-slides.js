@@ -109,9 +109,9 @@ prompt.start();
 prompt.get(['id'], function (err, result) {
     if (slidedecks[result.id]) {
         let c = create_command(slidedecks[result.id]);
-
+      console.log(c);
+      
         cmd.run(c).then(function (exitCodes) {
-            console.log("ok");
           if (c.match(/static/)) {
             console.log("Create Static Version … ");
                 copyAdditionalContent(slidedecks[result.id]);    

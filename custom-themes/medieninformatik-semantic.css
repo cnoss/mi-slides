@@ -851,6 +851,10 @@ html
     box-shadow: none;
 }
 
+.reveal .slides i.fa{
+  margin-right: 10px;
+}
+
 .reveal .slides .statement blockquote:after,
 .reveal .slides .statement blockquote:before
 {
