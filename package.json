@@ -5,7 +5,7 @@
   "dependencies": {
     "node-run-cmd": "^1.0.1",
     "prompt": "^1.0.0",
-    "reveal-md": "^3.3.1"
+    "reveal-md": "^5.3.4"
   },
   "devDependencies": {
     "copy-dir": "^0.3.0",
