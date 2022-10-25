@@ -101,8 +101,6 @@ function copyAdditionalContent(slidedeck) {
     
 }
 
-
-
 /* Start the prompt 
 -----------------------------------------------------------------------------*/
 prompt.start();
